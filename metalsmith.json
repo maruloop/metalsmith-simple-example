@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "title": "My Blog",
+    "description": "My second, super-cool blog."
+  },
+  "plugins": {
+    "metalsmith-collections": {
+      "posts": {
+        "pattern":"posts/*.md"
+      }
+    },
+    "metalsmith-markdown": {},
+    "metalsmith-permalinks": {
+      "pattern": "posts/:title"
+    },
+    "metalsmith-templates": {
+      "engine": "handlebars"
+    }
+  }
+}
